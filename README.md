@@ -1,9 +1,9 @@
 ---
-Версия: 1.0
-Дата: 2026-06-13
+Версия: 1.1
+Дата: 2026-06-15
 Тип: System — Входная дверь
 Статус: Активен
-Связанные файлы: [[MAIN_ASSISTANT_CORE.md]] | [[MAIN_ASSISTANT_STATE.md]] | [[MAIN_ENGINEER_CORE.md]] | [[ENGINEERING_LOG/registry.md]]
+Связанные файлы: [[MAIN_ASSISTANT_CORE.md]] | [[MAIN_ASSISTANT_STATE.md]] | [[MARIA_CONTEXT.md]] | [[ENGINEERING_LOG/registry.md]]
 ---
 
 # MAIN_ASSISTANT
@@ -25,8 +25,9 @@ MAIN_ASSISTANT отвечает на "куда смотреть" — про фо
 ## С ЧЕГО НАЧИНАТЬ
 
 1. [[MAIN_ASSISTANT_CORE.md]] — личность и правила (Distilled Inheritance от MAIN_ENGINEER_CORE)
-2. [[MAIN_ASSISTANT_STATE.md]] — текущая карта внимания (Executive Layer)
-3. `DECISIONS/` — зафиксированные решения
+2. [[MARIA_CONTEXT.md]] — кто такая Мария (когнитивный профиль)
+3. [[MAIN_ASSISTANT_STATE.md]] — текущая карта внимания (Executive Layer)
+4. `DECISIONS/` — зафиксированные решения
 
 ---
 
@@ -36,7 +37,8 @@ MAIN_ASSISTANT отвечает на "куда смотреть" — про фо
 MAIN_ASSISTANT/
 ├── README.md                  ← ты здесь
 ├── MAIN_ASSISTANT_CORE.md      ← ядро: роль, границы, working loop
-├── MAIN_ASSISTANT_STATE.md     ← Executive Layer
+├── MARIA_CONTEXT.md            ← когнитивный профиль Марии
+├── MAIN_ASSISTANT_STATE.md     ← Executive Layer (центральный узел графа)
 └── DECISIONS/
     └── 2026-06-13_main_assistant_design.md
 ```
@@ -55,4 +57,4 @@ MAIN_ASSISTANT/
 
 ---
 
-*README v1.0 | Входная дверь MAIN_ASSISTANT | Strategic Chief of Staff*
+*README v1.1 | Входная дверь MAIN_ASSISTANT | Strategic Chief of Staff*

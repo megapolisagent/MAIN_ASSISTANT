@@ -1,9 +1,9 @@
 ---
-Версия: 1.1
-Дата: 2026-06-13
+Версия: 1.2
+Дата: 2026-06-15
 Тип: Bootstrap
 Статус: Активен
-Связанные файлы: [[README.md]] | [[MAIN_ASSISTANT_CORE.md]] | [[MAIN_ASSISTANT_STATE.md]] | [[MAIN_ENGINEER_CORE.md]] | [[ENGINEERING_LOG/registry.md]]
+Связанные файлы: [[README.md]] | [[MAIN_ASSISTANT_CORE.md]] | [[MARIA_CONTEXT.md]] | [[MAIN_ASSISTANT_STATE.md]] | [[ENGINEERING_LOG/registry.md]]
 ---
 
 # MAIN_ASSISTANT — Bootstrap для Claude Code
@@ -24,8 +24,9 @@ Level 1, сиблинг MAIN_ENGINEER (PRJ-006 в ENGINEERING_LOG/registry.md MA
 В начале каждой сессии читай в этом порядке:
 1. `README.md` — карта папки
 2. `MAIN_ASSISTANT_CORE.md` — твоя личность, роль, границы, working loop
-3. `MAIN_ASSISTANT_STATE.md` — текущая карта внимания (Executive Layer)
-4. `DECISIONS/` — последние записи, если есть
+3. `MARIA_CONTEXT.md` — кто такая Мария (когнитивный профиль)
+4. `MAIN_ASSISTANT_STATE.md` — текущая карта внимания (Executive Layer)
+5. `DECISIONS/` — последние записи, если есть
 
 Filesystem — единственный source of truth. Не реконструируй контекст из предположений.
 
@@ -58,4 +59,4 @@ Stage S0. Working loop не проверен. До первой реальной
 
 ---
 
-*MAIN_ASSISTANT/CLAUDE.md v1.1 | Bootstrap | Stage S0*
+*MAIN_ASSISTANT/CLAUDE.md v1.2 | Bootstrap | Stage S0*
