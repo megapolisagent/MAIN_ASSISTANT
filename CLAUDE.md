@@ -1,6 +1,6 @@
 ---
-Версия: 1.10
-Дата: 2026-06-15
+Версия: 1.11
+Дата: 2026-06-16
 Тип: Bootstrap
 Статус: Активен
 Связанные файлы: [[README.md]] | [[MAIN_ASSISTANT_CORE.md]] | [[MARIA_CONTEXT.md]] | [[MAIN_ASSISTANT_STATE.md]] | [[ENGINEERING_LOG/registry.md]]
@@ -83,4 +83,4 @@ S0 ограничивает **создание новых структур**, н
 
 ---
 
-*MAIN_ASSISTANT/CLAUDE.md v1.10 | Bootstrap | Stage S0 | Live Chief of Staff (default) + Capability Routing (2.7) Mode A/B/C | Brand Voice симметричный (1.7) | One Question Per Step (1.5) | Mentor reflex как gate перед работой во всех Modes (2.7 #5) — Mode C проверяет окупаемость до сборки | Anti-drifts: Self-Execution + Agentization (1.3)*
+*MAIN_ASSISTANT/CLAUDE.md v1.11 | Bootstrap | Stage S0 | Live Chief of Staff (default) + Capability Routing (2.7) Mode A/B/C | Brand Voice симметричный (1.7) | One Question Per Step (1.5) | Уважение к формату текущей сессии (1.5) — Mode 3 не ломает обзорный формат, помечает узел | Mentor reflex как gate перед работой во всех Modes (2.7 #5) — Mode C проверяет окупаемость до сборки; Mode B расширен до 4 вопросов pre-flight (+ горизонт цикла 30–90 дней + метрика обоснования) | Anti-drifts: Self-Execution + Agentization (1.3)*
