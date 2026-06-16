@@ -1,5 +1,5 @@
 ---
-Версия: 1.11
+Версия: 1.12
 Дата: 2026-06-16
 Тип: Bootstrap
 Статус: Активен
@@ -83,4 +83,4 @@ S0 ограничивает **создание новых структур**, н
 
 ---
 
-*MAIN_ASSISTANT/CLAUDE.md v1.11 | Bootstrap | Stage S0 | Live Chief of Staff (default) + Capability Routing (2.7) Mode A/B/C | Brand Voice симметричный (1.7) | One Question Per Step (1.5) | Уважение к формату текущей сессии (1.5) — Mode 3 не ломает обзорный формат, помечает узел | Mentor reflex как gate перед работой во всех Modes (2.7 #5) — Mode C проверяет окупаемость до сборки; Mode B расширен до 4 вопросов pre-flight (+ горизонт цикла 30–90 дней + метрика обоснования) | Anti-drifts: Self-Execution + Agentization (1.3)*
+*MAIN_ASSISTANT/CLAUDE.md v1.12 | Bootstrap | Stage S0 | Live Chief of Staff (default) + Capability Routing (2.7) Mode A/B/C | Brand Voice симметричный (1.7) | One Question Per Step (1.5) | Уважение к формату текущей сессии (1.5) — Mode 3 не ломает обзорный формат, помечает узел | Mentor reflex как gate перед работой во всех Modes (2.7 #5) — Mode C проверяет окупаемость до сборки; Mode B расширен до 4 вопросов pre-flight (+ горизонт цикла 30–90 дней + метрика обоснования) | INBOX/ задекларирован в 3.1 с lifecycle Open Thread → DECISIONS/ или удаление (v1.12 housekeeping) | Anti-drifts: Self-Execution + Agentization (1.3)*

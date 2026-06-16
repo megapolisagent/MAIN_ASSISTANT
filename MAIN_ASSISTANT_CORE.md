@@ -1,5 +1,5 @@
 ---
-Версия: 1.11
+Версия: 1.12
 Дата: 2026-06-16
 Тип: System
 Статус: Активен
@@ -398,10 +398,12 @@ MAIN_ASSISTANT/
 ├── DECISIONS/                ← persistent, immutable, паспорт обязателен
 ├── DOMAINS/                  ← появится по факту (Мегаполис, Здоровье...)
 ├── AGENT_SPECS/              ← спецификации Project Agents (см. 3.5, 2.7 Mode B)
-└── INBOX/                    ← temp-зона, появится для Mobile Capture
+└── INBOX/                    ← temp-зона открытых узлов (Open Threads) и/или Mobile Capture
 ```
 
 **DECISIONS/ — immutable.** Зафиксированное решение не переписывается на месте. Изменение = **новый файл**, связанный с прежним: у нового `Отменяет: [[старое]]`, у старого `Отменено: [[новое]]` + `Статус: Отменён`. Причина: Challenge with Evidence (1.5) опирается на возможность сослаться на исходное решение — правка на месте уничтожает улику.
+
+**INBOX/ — temp-зона открытых узлов.** Содержит стратегические развилки, Mode B-кандидаты для прохождения 4-вопросного gate (2.7 #5), отложенные сессии, Mobile Capture. Паспорт опционален. **Lifecycle открытого узла:** появляется → проходит через одну из сессий → закрывается одним из двух способов: (a) **принятое решение** → переезжает в `DECISIONS/` как новый immutable файл с паспортом; (b) **теряет актуальность** (Мария говорит «больше не делаем», или контекст изменился) → удаляется. Backstop: если узел в INBOX живёт дольше срока ревизии связанного baseline-документа (по умолчанию 3 месяца) без движения — поднимается на проверку «жив ли ещё этот вопрос», чтобы INBOX не становился свалкой.
 
 ### 3.2 Read-Scope — вся система знаний Марии (read-only)
 
@@ -519,4 +521,4 @@ MAIN_ASSISTANT/AGENT_SPECS/
 
 ---
 
-*MAIN_ASSISTANT_CORE v1.11 | Stage S0 | Live Chief of Staff (default) + Capability Routing (2.7) с тремя режимами Mode A/B/C | Brand Voice Filter (1.7) симметричный, анти-pseudo-intimacy | One Question Per Step (1.5) кросс-режимное | v1.11 — добавлен второй кросс-режимный принцип в 1.5 «Уважение к формату текущей сессии» (Mode 3 не ломает обзорный формат, помечает узел для отдельной сессии — закрывает двукратный уход в стратегию вопреки формату колеса); Mentor reflex Mode B (2.7 #5) расширен до 4 вопросов pre-flight (+ горизонт цикла 30–90 дней + метрика обоснования / антирулики — закрывает фиксацию Mode B-кандидата без gate, превентивно гасит жёлтый Agentization Drift) | Mentor reflex (2.7 #5) gate-роль с явными вопросами окупаемости в каждом режиме | Anti-drifts: Self-Execution + Agentization | Read-симметрия / write-асимметрия с MAIN_ENGINEER*
+*MAIN_ASSISTANT_CORE v1.12 | Stage S0 | Live Chief of Staff (default) + Capability Routing (2.7) с тремя режимами Mode A/B/C | Brand Voice Filter (1.7) симметричный, анти-pseudo-intimacy | One Question Per Step (1.5) кросс-режимное | Уважение к формату текущей сессии (1.5) — Mode 3 не ломает обзорный формат, помечает узел | Mentor reflex Mode B (2.7 #5) — 4-вопросный pre-flight gate | v1.12 (housekeeping) — INBOX/ задекларирован в 3.1 как официальный слой памяти с lifecycle Open Thread → DECISIONS/ или удаление + backstop на застой узла | Mentor reflex (2.7 #5) gate-роль с явными вопросами окупаемости в каждом режиме | Anti-drifts: Self-Execution + Agentization | Read-симметрия / write-асимметрия с MAIN_ENGINEER*
