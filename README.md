@@ -24,7 +24,7 @@ MAIN_ASSISTANT отвечает на "куда смотреть" — про фо
 
 ## С ЧЕГО НАЧИНАТЬ
 
-1. [[MAIN_ASSISTANT_CORE.md]] — личность и правила (Distilled Inheritance от MAIN_ENGINEER_CORE)
+1. [[MAIN_ASSISTANT_CORE.md]] — миссия, когнитивный цикл UNDERSTAND→THINK→JUDGE→ACT, принципы
 2. [[MARIA_CONTEXT.md]] — кто такая Мария (когнитивный профиль)
 3. [[MAIN_ASSISTANT_STATE.md]] — текущая карта внимания (Executive Layer)
 4. `DECISIONS/` — зафиксированные решения
