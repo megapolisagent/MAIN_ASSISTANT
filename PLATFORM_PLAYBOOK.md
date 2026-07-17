@@ -1,5 +1,5 @@
 ---
-Версия: 2.1
+Версия: 2.2
 Дата: 2026-07-17
 Тип: Platform Decision Playbook
 Статус: Активен
@@ -61,7 +61,7 @@
 | **EXPLORE** | Sub-agents / параллельный поиск |
 | **EXTERNAL CONTEXT** | MCP (Calendar, Gmail, и т.д.) |
 
-**Ownership:** MAIN_ENGINEER. При появлении нового capability (MCP, Skill, плагин) — MAIN_ENGINEER обновляет этот маппинг. Engineering Hand-off закрывается не только сборкой capability, но и обновлением Resolver.
+**Ownership:** MAIN_ENGINEER. При появлении нового capability (MCP, Skill, плагин) — MAIN_ENGINEER обновляет этот маппинг И раздел **Available Platform Capabilities** ниже. Engineering Hand-off закрывается не только сборкой capability, но и обновлением обоих разделов.
 
 **При отсутствии capability для класса:**
 ```
@@ -70,6 +70,43 @@ Resolution: не найдена
 Signal: [одна строка — чего именно не хватает]
 ```
 THINK принимает ограничение, переходит в JUDGE с маркером НЕ ЗНАЕМ. Маркер становится входом для Engineering Hand-off.
+
+---
+
+## Available Platform Capabilities
+
+> Спецификация capabilities MAIN_ASSISTANT — что входит в комплектацию и почему.
+> Ownership: MAIN_ENGINEER. Обновлять при изменениях конфигурации.
+> Последняя верификация: 2026-07-17
+
+### Обязательная комплектация — без этого система не работает
+
+| Capability | Класс | Почему обязательна |
+|---|---|---|
+| Filesystem (read-only) — DECISIONS/, STATE.md, MAIN_ENGINEER/, AI_Projects/ | REMEMBER | Основа роли Chief of Staff: знать контекст до начала разговора |
+| Auto-memory (~/.claude/projects/MAIN-ASSISTANT/memory/) | REMEMBER | Накопление знания о Марии между сессиями |
+| WebSearch | VERIFY | Рекомендации по платформам и рынку требуют актуальных данных |
+
+### Опциональные — подключаются по задаче
+
+| Capability | Класс | Когда подключать |
+|---|---|---|
+| Gmail MCP | EXTERNAL CONTEXT | Задача касается переписки Марии |
+| Google Calendar MCP | EXTERNAL CONTEXT | Задачи планирования и расписания |
+| Google Drive MCP | EXTERNAL CONTEXT | Работа с документами |
+| Sub-agents (Agent tool) | EXPLORE | Широкий параллельный поиск, изоляция объёмных результатов |
+
+### Planned Automations — сейчас существуют как протоколы, не Skills
+
+Эти процессы описаны в MAIN_ASSISTANT_CORE как Reference & Protocols. Они станут Anthropic Skills (SKILL.md + tools/ + examples/) только после реализации.
+
+| Процесс | Текущий статус | Когда станет Skill |
+|---|---|---|
+| Engineering Hand-off | Протокол в CORE.md | После создания SKILL.md + шаблона |
+| Agent Specification | Протокол в CORE.md | После создания SKILL.md + шаблона |
+| Session Capture | Протокол в CORE.md | После создания SKILL.md + шаблона |
+
+**Не входит в комплектацию MAIN_ASSISTANT:** Tavily, Exa, Context7, Sequential Thinking, Playwright — это окружение MAIN_ENGINEER для AI_Projects/, не для Chief of Staff.
 
 ---
 
@@ -423,4 +460,4 @@ Engineering Hand-off:
 
 ---
 
-*PLATFORM_PLAYBOOK v2.0 | Playbook принятия решений | Активируется Platform Capability Check | Не справочник — операционная система выбора механизма*
+*PLATFORM_PLAYBOOK v2.2 | Playbook принятия решений | Capability Resolver + Available Platform Capabilities | Активируется Platform Capability Check | Не справочник — операционная система выбора механизма*
