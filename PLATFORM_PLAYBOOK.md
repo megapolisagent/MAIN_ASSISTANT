@@ -49,7 +49,8 @@
 
 ## Capability Resolver
 
-> MAIN_ASSISTANT определяет когнитивную потребность — Resolver выбирает конкретный capability.
+> MAIN_ASSISTANT определяет когнитивную потребность в THINK — Resolver выполняет операционный lookup: класс потребности → capability.
+> Resolver не "думает" — это маппинг. Когнитивная работа происходит в THINK (Need Discovery). Resolver механический.
 > MAIN_ASSISTANT не должен знать что существует WebSearch, MCP Calendar и т.д. — только что возникла потребность класса VERIFY или EXTERNAL CONTEXT.
 
 ### Маппинг классов потребностей в capabilities
