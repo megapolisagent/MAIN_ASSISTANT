@@ -1,6 +1,6 @@
 ---
-Версия: 2.0
-Дата: 2026-07-16
+Версия: 2.1
+Дата: 2026-07-17
 Тип: Platform Decision Playbook
 Статус: Активен
 Связанные файлы: [[CLAUDE.md]] | [[MAIN_ASSISTANT_CORE.md]]
@@ -44,6 +44,32 @@
 Что из платформы НЕ решает задачу?
 └─ Только это → Engineering Hand-off
 ```
+
+---
+
+## Capability Resolver
+
+> MAIN_ASSISTANT определяет когнитивную потребность — Resolver выбирает конкретный capability.
+> MAIN_ASSISTANT не должен знать что существует WebSearch, MCP Calendar и т.д. — только что возникла потребность класса VERIFY или EXTERNAL CONTEXT.
+
+### Маппинг классов потребностей в capabilities
+
+| Класс (Need Discovery) | Capabilities |
+|---|---|
+| **REMEMBER** | Memory / DECISIONS/ / STATE.md / filesystem |
+| **VERIFY** | WebSearch (текущий default) |
+| **EXPLORE** | Sub-agents / параллельный поиск |
+| **EXTERNAL CONTEXT** | MCP (Calendar, Gmail, и т.д.) |
+
+**Ownership:** MAIN_ENGINEER. При появлении нового capability (MCP, Skill, плагин) — MAIN_ENGINEER обновляет этот маппинг. Engineering Hand-off закрывается не только сборкой capability, но и обновлением Resolver.
+
+**При отсутствии capability для класса:**
+```
+Need class: [REMEMBER / VERIFY / EXPLORE / EXTERNAL CONTEXT]
+Resolution: не найдена
+Signal: [одна строка — чего именно не хватает]
+```
+THINK принимает ограничение, переходит в JUDGE с маркером НЕ ЗНАЕМ. Маркер становится входом для Engineering Hand-off.
 
 ---
 
