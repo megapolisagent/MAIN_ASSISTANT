@@ -3,7 +3,7 @@
 Дата: 2026-06-22
 Тип: Client Profile
 Статус: Активен
-Связанные файлы: [[FEAR_TO_ACTION_COACH.md]] | [[../DECISIONS/2026-06-16_wheel_of_life_baseline.md]] | [[../MAIN_ASSISTANT_STATE.md]]
+Связанные файлы: [[FEAR_TO_ACTION_COACH.md]] | [[../wheel-of-life-baseline-2026-06-16.md]] | [[../../MAIN_ASSISTANT_STATE.md]]
 ---
 
 # MARIA COACHING BRIEF

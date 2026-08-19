@@ -4,7 +4,7 @@
 Тип: Agent Specification
 Подтип: Project Agent
 Статус: Активна
-Связанные файлы: [[MARIA_COACHING_BRIEF.md]] | [[fear_to_action_coach_log.md]] | [[../DECISIONS/2026-06-16_wheel_of_life_baseline.md]]
+Связанные файлы: [[MARIA_COACHING_BRIEF.md]] | [[fear_to_action_coach_log.md]] | [[../wheel-of-life-baseline-2026-06-16.md]]
 ---
 
 # FEAR_TO_ACTION_COACH
