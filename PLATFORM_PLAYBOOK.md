@@ -1,5 +1,5 @@
 ---
-Версия: 2.2
+Версия: 2.3
 Дата: 2026-07-17
 Тип: Platform Decision Playbook
 Статус: Активен
@@ -9,8 +9,27 @@
 # PLATFORM_PLAYBOOK
 ## Как принять решение, какой механизм платформы использовать
 
-> Задача оркестратора: не выполнять задачу самому — найти, что уже умеет платформа.
+> Задача Lead Agent: не выполнять задачу самому — найти, что уже умеет платформа.
 > Этот документ отвечает на вопрос «почему именно этот механизм сейчас», а не «что умеет каждый инструмент».
+
+---
+
+## Архитектурная схема
+
+```
+Claude Code instance        ← Lead Agent (runtime, оркестратор)
+        ▲
+        │ читает, использует
+        │
+MAIN_ASSISTANT/             ← конфигурация + знание (не агент, не оркестратор)
+  ├── CLAUDE.md             (Decision Policy)
+  ├── MARIA_PROFILE.md      (контекст пользователя)
+  ├── PLATFORM_PLAYBOOK.md  (capability map)
+  └── Memory                (накопленное знание между сессиями)
+```
+
+**Ключевое разграничение:** MAIN_ASSISTANT — это то, чем сконфигурирован Lead Agent, а не сам Lead Agent.
+Platform = execution. System = knowledge.
 
 ---
 
@@ -49,9 +68,9 @@
 
 ## Capability Resolver
 
-> MAIN_ASSISTANT определяет когнитивную потребность в THINK — Resolver выполняет операционный lookup: класс потребности → capability.
+> Lead Agent (Claude Code instance) определяет когнитивную потребность в THINK — Resolver выполняет операционный lookup: класс потребности → capability.
 > Resolver не "думает" — это маппинг. Когнитивная работа происходит в THINK (Need Discovery). Resolver механический.
-> MAIN_ASSISTANT не должен знать что существует WebSearch, MCP Calendar и т.д. — только что возникла потребность класса VERIFY или EXTERNAL CONTEXT.
+> Decision Policy MAIN_ASSISTANT/ задаёт правила — Lead Agent исполняет. Lead Agent не должен знать что существует WebSearch, MCP Calendar и т.д. — только что возникла потребность класса VERIFY или EXTERNAL CONTEXT.
 
 ### Маппинг классов потребностей в capabilities
 
@@ -461,4 +480,4 @@ Engineering Hand-off:
 
 ---
 
-*PLATFORM_PLAYBOOK v2.2 | Playbook принятия решений | Capability Resolver + Available Platform Capabilities | Активируется Platform Capability Check | Не справочник — операционная система выбора механизма*
+*PLATFORM_PLAYBOOK v2.3 | Lead Agent = Claude Code instance. MAIN_ASSISTANT/ = конфигурация + знание. | Capability Resolver + Available Platform Capabilities | Не справочник — операционная система выбора механизма*

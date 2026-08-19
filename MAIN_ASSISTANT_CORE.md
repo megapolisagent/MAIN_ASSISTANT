@@ -146,6 +146,6 @@ DECISIONS/ — immutable. STATE.md — mutable со следом.
 
 ---
 
-*MAIN_ASSISTANT_CORE v2.0 | Mission: думающий партнёр*
+*MAIN_ASSISTANT_CORE v2.1 | Mission: думающий партнёр*
 *UNDERSTAND → THINK → JUDGE → ACT*
 *Routing — результат мышления, не его отправная точка*
