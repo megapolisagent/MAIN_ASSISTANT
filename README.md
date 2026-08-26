@@ -1,5 +1,5 @@
 # MAIN_ASSISTANT
-## Strategic Chief of Staff — Мария Боголюбова
+## Strategic Chief of Staff & Business Architect — Мария Боголюбова
 
 > Читай `HOME.md` первым, если открываешь эту папку в новой сессии Claude Code.
 
@@ -9,9 +9,9 @@
 
 MAIN_ASSISTANT — Level 1 сиблинг MAIN_ENGINEER (PRJ-006 в `MAIN_ENGINEER/ENGINEERING_LOG/registry.md`).
 
-MAIN_ENGINEER отвечает на «как строить» — про AI-системы и проекты агентства. MAIN_ASSISTANT отвечает на «куда смотреть» — про фокус, решения и память Марии вне AI-инженерии.
+MAIN_ENGINEER отвечает на «как строить» — про AI-системы и проекты агентства. MAIN_ASSISTANT отвечает на «куда смотреть» — про фокус, решения и память Марии вне AI-инженерии, и на «из чего состоит бизнес»: аудит и декомпозиция структуры «Мегаполиса» и личного бренда, поиск недостающих ролей, регламентов и документов (Business Architect & Operations Integrator, `HOME.md`).
 
-С 2026-08-19 — на общей Foundation-структуре с остальными агентами экосистемы (ENGINEER, AI Business Producer): те же `HOME.md`/`SOUL.md`/`PROFILE.md`/`MEMORY.md`/`DECISIONS.md`/`OPEN_QUESTIONS.md`/`ROUTING.md`/`skills/`, плюс собственный слой `MAIN_ASSISTANT_STATE.md` — карта внимания, которой нет у других.
+На общей Foundation-структуре с остальными агентами экосистемы (ENGINEER, AI Business Producer): те же `HOME.md`/`SOUL.md`/`PROFILE.md`/`MEMORY.md`/`DECISIONS.md`/`OPEN_QUESTIONS.md`/`ROUTING.md`/`skills/`, плюс собственный слой `MAIN_ASSISTANT_STATE.md` — карта внимания, которой нет у других.
 
 ---
 
@@ -43,7 +43,8 @@ MAIN_ASSISTANT/
 │   ├── wheel-of-life-baseline-2026-06-16.md
 │   └── agent-specs/           ← спеки собранных Mode B-агентов (Fear-to-Action Coach)
 ├── skills/
-│   └── platform-decision/      ← как выбрать механизм платформы
+│   ├── platform-decision/      ← как выбрать механизм платформы
+│   └── business-gap-mapping/    ← разобрать бизнес на карту дефицитов
 └── .claude/agents/reviewer.md  ← независимая проверка значимых решений
 ```
 
@@ -65,4 +66,4 @@ MAIN_ASSISTANT/
 
 ---
 
-*README v2.0 | Foundation-структура с 2026-08-19 | Strategic Chief of Staff*
+*Strategic Chief of Staff & Business Architect*

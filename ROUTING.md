@@ -11,7 +11,7 @@
 | Выбор механизма платформы перед Engineering Hand-off | `skills/platform-decision/SKILL.md` |
 | Проект English Tutor для сына — Source of Truth, LOCKED-решения, следующий шаг | `knowledge/projects/english-tutor-handoff.md` (читать перед этим — не пересказ истории чата) |
 | Архитектурные L1-наблюдения из проекта English Tutor | `knowledge/projects/english-tutor-architecture-observations.md` |
-| Юридический конструктор договоров (Мегаполис) — структура данных, ТЗ для Инженера, Human Override по Roadmap | `knowledge/projects/legal-contract-constructor-handoff.md` |
+| Юридический конструктор договоров (Мегаполис) — структура данных, ТЗ для Инженера, Human Override по Roadmap, продуктовый анализ, рыночное исследование | `knowledge/projects/legal-contract-constructor/` (`handoff.md`, `product-analysis.md`, `market-research.md`) |
 | *(пополняется по ходу работы)* | |
 
 ## Прочее

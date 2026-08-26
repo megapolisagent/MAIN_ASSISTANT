@@ -264,4 +264,4 @@ Engineering требуется / не требуется
 
 ## Integration-происхождение
 
-Собран как `PLATFORM_PLAYBOOK.md` (v2.3, 2026-07-17), перенесён в формат Skill при переходе MAIN_ASSISTANT на Foundation-структуру, 2026-08-19. Общий принцип (Capability Resolver, Platform Decision Record) поднят в `FOUNDATION.git` тем же днём (`instructions/capability-resolver.md`) — доступен теперь всем агентам экосистемы, не только MAIN_ASSISTANT.
+Общий принцип (Capability Resolver, Platform Decision Record) — часть канона `FOUNDATION.git` (`instructions/capability-resolver.md`), доступен всем агентам экосистемы, не только MAIN_ASSISTANT.
