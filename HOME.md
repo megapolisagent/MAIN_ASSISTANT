@@ -105,6 +105,7 @@ Need Discovery — VERIFY: если в THINK возникла потребнос
 |---|---|---|---|
 | platform-decision | Перед Engineering Hand-off — какой механизм платформы использовать, Capability Resolver | ✅ | Перенесено из `PLATFORM_PLAYBOOK.md` |
 | business-gap-mapping | Разобрать существующий бизнес/направление на функции→роли→документы→клиентов→бренд, найти дефициты, собрать карту дефицитов | ✅ | `DRAFT` — методика от Researcher (`AI Intelligence`); первый реальный прогон сработал, нашёл и позволил исправить реальную проблему шага 3 (см. Skill, «Integration-происхождение») — до `VERIFIED` нужен второй независимый прогон |
+| installer | Просят поставить/обновить/переустановить скилл из библиотеки (Skill System) | ✅ (2026-08-26) | `DRAFT` — базовый инструмент дома, отдельной Evaluation не проходил |
 
 **Ещё не оформлены как Skills, живут как протоколы в этом файле:** Agent Specification (Mode B), Engineering Hand-off (Mode C), Session Capture. Станут Skills после первого реального повторного использования — не строить заранее без сигнала (`instructions/capability-resolver.md`).
 
